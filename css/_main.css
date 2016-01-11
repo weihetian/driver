@@ -1,0 +1,82 @@
+
+
+.slide{
+  width: 100%;
+  position: relative;
+}
+
+#slide-1{
+  height: 600px;
+  background: url("http://blogs-images.forbes.com/jeffbercovici/files/2014/08/uberX_Driver2_Color1-e1408037352451-1940x1091.jpg") no-repeat center center fixed;
+   -webkit-background-size: cover;
+   -moz-background-size: cover;
+   -o-background-size: cover;
+   background-size: cover;
+   margin-bottom:400px;
+}
+
+.application{
+  position: absolute;
+  left:50px;
+  bottom:-100px;
+  font-family: "Avenir Next", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-align: center;
+  width: 450px;
+  background-color: rgba(255,255,255,1);
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  border-radius: 5px;
+  overflow: hidden;
+  padding-bottom:20px;
+}
+
+.application_header{
+  background-color: #ecf0f1;
+  padding: 15px;
+  font-size: 30px;
+  font-weight: 400;
+}
+
+.application_body{
+
+}
+
+.progress_bar{
+  padding:50px 20px;
+}
+
+.application_btn_area{
+  margin: 20px;
+}
+
+.next_btn{
+  position: relative;
+  padding:8px;
+  width: 80px;
+  text-align: center;
+  display: inline-block;
+  color: white;
+   text-shadow: 0 1px 2px rgba(0, 0, 0, 0.25);
+   box-shadow: inset 0 -3px #16a085;
+  background-color: #1abc9c;
+  cursor: pointer;
+}
+
+.next_btn:hover{
+  top:2px;
+  box-shadow: inset 0 -1px #16a085;
+}
+
+
+.input--nariko{
+
+}
+
+.input{
+  width: 180px;
+}
+
+
+.main{
+  margin-bottom: 100px;
+  position: relative;
+}

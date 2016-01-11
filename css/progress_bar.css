@@ -1,0 +1,7 @@
+.progress_bar_list{
+  width: 100%;
+}
+
+.progress_bar_list li{
+  float: left;
+}
