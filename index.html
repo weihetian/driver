@@ -9,6 +9,11 @@
 
   <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
 
+  <link href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+
+
+		<link rel="stylesheet" href="css/select.css">
+
 	<link rel="stylesheet" type="text/css" href="css/normalize.css" />
   <link rel="stylesheet" type="text/css" href="css/demo.css" />
       <link rel="stylesheet" href='css/set2.css'>
@@ -24,68 +29,183 @@
   <div class='slide' id='slide-1'>
     <div class='application'>
       <div class='application_header'>
-        Beacome a driver
+        Become a driver
       </div>
       <div class='progress_bar'>
         <ul class='progress_bar_list'>
-          <li>Driver Info</li>
-          <li>Vehicle Info</li>
-          <li>Driver Habits</li>
+          <li class='active step'>Driver Info</li>
+          <li class='step'>Vehicle Info</li>
+          <li class='end'>Driver Habits</li>
         </ul>
       </div>
       <div class='application_body'>
-        <span class="input input--nariko">
-        <input class="input__field input__field--nariko" type="text" id="input-20" />
-        <label class="input__label input__label--nariko" for="input-20">
-          <span class="input__label-content input__label-content--nariko">First Name</span>
-        </label>
-      </span>
-      <span class="input input--nariko">
-      <input class="input__field input__field--nariko" type="text" id="input-20" />
-      <label class="input__label input__label--nariko" for="input-20">
-        <span class="input__label-content input__label-content--nariko">Last Name</span>
-      </label>
-    </span>
+        <div class='application_body_form_arae'>
+        <div class='fist_page'>
+          <span class="input input--nariko">
+            <input class="input__field input__field--nariko" type="text" id="input-20" />
+            <label class="input__label input__label--nariko" for="input-20">
+              <span class="input__label-content input__label-content--nariko"><i class="fa fa-user"></i> First Name</span>
+            </label>
+          </span>
+          <span class="input input--nariko">
+            <input class="input__field input__field--nariko" type="text" id="input-20" />
+            <label class="input__label input__label--nariko" for="input-20">
+              <span class="input__label-content input__label-content--nariko"><i class="fa fa-user"></i> Last Name</span>
+            </label>
+          </span>
 
-    <span class="input input--nariko">
-    <input class="input__field input__field--nariko" type="text" id="input-20" />
-    <label class="input__label input__label--nariko" for="input-20">
-      <span class="input__label-content input__label-content--nariko">Email</span>
-    </label>
-  </span>
+          <span class="input input--nariko">
+            <input class="input__field input__field--nariko" type="text" id="input-20" />
+            <label class="input__label input__label--nariko" for="input-20">
+              <span class="input__label-content input__label-content--nariko"><i class="fa fa-envelope-o"></i> Email</span>
+            </label>
+          </span>
 
-  <span class="input input--nariko">
-  <input class="input__field input__field--nariko" type="text" id="input-20" />
-  <label class="input__label input__label--nariko" for="input-20">
-    <span class="input__label-content input__label-content--nariko">Confirm Email</span>
-  </label>
-</span>
+          <span class="input input--nariko">
+            <input class="input__field input__field--nariko" type="text" id="input-20" />
+            <label class="input__label input__label--nariko" for="input-20">
+              <span class="input__label-content input__label-content--nariko"><i class="fa fa-envelope-o"></i> Confirm Email</span>
+            </label>
+          </span>
 
-<span class="input input--nariko">
-  <input class="input__field input__field--nariko" type="text" id="input-20" />
-  <label class="input__label input__label--nariko" for="input-20">
-    <span class="input__label-content input__label-content--nariko">Phone</span>
-  </label>
-  </span>
+          <span class="input input--nariko">
+            <input class="input__field input__field--nariko" type="text" id="input-20" />
+            <label class="input__label input__label--nariko" for="input-20">
+              <span class="input__label-content input__label-content--nariko"><i class="fa fa-phone"></i> Phone</span>
+            </label>
+          </span>
 
-  <span class="input input--nariko">
-    <input class="input__field input__field--nariko" type="text" id="input-20" />
-    <label class="input__label input__label--nariko" for="input-20">
-      <span class="input__label-content input__label-content--nariko">How did you hear about us?</span>
-    </label>
-    </span>
+          <span class="input input--nariko">
+            <input class="input__field input__field--nariko" type="text" id="input-20" />
+            <label class="input__label input__label--nariko" for="input-20">
+              <span class="input__label-content input__label-content--nariko">How did you hear about us?</span>
+            </label>
+          </span>
+        </div>
 
-    <div class='application_btn_area'>
-      <div class='btn next_btn'>
-        Next
+
+
+        <!-- second page -->
+        <div class='second_page'>
+
+
+          <div id="year-container" class="field-container">
+            <div class='normalLabel_wrapper'><label for="year" class="normalLabel">Year:</label></div>
+            <select name="year" id="year" class="year select_option"></select>
+          </div>
+          <div id="make-container" class="field-container">
+            <div class='normalLabel_wrapper'><label for="make"class="normalLabel">Make:</label></div>
+            <select name="make" id="make" class="make select_option"></select>
+          </div>
+          <div id="model-container" class="field-container">
+            <div class='normalLabel_wrapper'><label for="model" class="normalLabel">Model:</label></div>
+            <select name="model" id="model" class="model select_option"></select>
+          </div>
+          <div id="color-container" class="field-container-driverInfo field-container">
+            <div class='normalLabel_wrapper'><label for="color" class="normalLabel">Color:</label></div>
+            <select name="color" id="color" class="color select_option">
+              <option value="">---   </option>
+              <option>White</option>
+              <option>Black</option>
+              <option>Silver/Gray</option>
+              <option>Red</option>
+              <option>Blue</option>
+              <option>Brown/Beige</option>
+              <option>Green</option>
+              <option>Yellow/Gold</option>
+              <option>Other</option>
+            </select>
+          </div>
+          <div id="condition-container" class="field-container-driverInfo field-container">
+            <div class='normalLabel_wrapper'><label for="condition" class="normalLabel">Condition:</label></div>
+            <select name="condition" id="condition" class="condition select_option">
+              <option value="">---   </option>
+              <option>Excellent</option>
+              <option>Good</option>
+              <option>Average</option>
+              <option>Rough</option>
+              <option>Damaged</option>
+            </select>
+          </div>
+        </div>
+
+
+        <!-- third page -->
+        <div class='third_page'>
+          <span class="input input--nariko input_nomargin">
+            <input class="input__field input__field--nariko" type="text" id="input-20" />
+            <label class="input__label input__label--nariko" for="input-20">
+              <span class="input__label-content input__label-content--nariko"><i class="fa fa-home"></i> Home Zip</span>
+            </label>
+          </span>
+          <span class="input input--nariko input_nomargin">
+            <input class="input__field input__field--nariko" type="text" id="input-20" />
+            <label class="input__label input__label--nariko" for="input-20">
+              <span class="input__label-content input__label-content--nariko"><i class="fa fa-home"></i> Home City</span>
+            </label>
+          </span>
+
+          <span class="input input--nariko input_nomargin">
+            <input class="input__field input__field--nariko" type="text" id="input-20" />
+            <label class="input__label input__label--nariko" for="input-20">
+              <span class="input__label-content input__label-content--nariko"><i class="fa fa-building-o"></i> Work Zip</span>
+            </label>
+          </span>
+          <span class="input input--nariko input_nomargin">
+            <input class="input__field input__field--nariko" type="text" id="input-20" />
+            <label class="input__label input__label--nariko" for="input-20">
+              <span class="input__label-content input__label-content--nariko"><i class="fa fa-building-o"></i> Work City</span>
+            </label>
+          </span>
+
+
+          <span class="input input--nariko">
+            <input class="input__field input__field--nariko" type="text" id="input-20" />
+            <label class="input__label input__label--nariko" for="input-20">
+              <span class="input__label-content input__label-content--nariko">Average miles driven each day? (must be numeric)</span>
+            </label>
+          </span>
+
+          <span class="input input--nariko">
+            <input class="input__field input__field--nariko" type="text" id="input-20" />
+            <label class="input__label input__label--nariko" for="input-20">
+              <span class="input__label-content input__label-content--nariko">Average miles driven every weekend? (must be numeric)</span>
+            </label>
+          </span>
+
+          <div class='application_textarea'>
+            <p>Anything else you can tell us about your driving habits
+(the more specific the information the better)</p>
+            <textarea></textarea></div>
+
+
+        </div>
       </div>
-    </div>
+
+          <div class='application_btn_area'>
+            <div class='btn'>
+              <div class='left_btn'>
+                <i class="fa fa-arrow-left"></i>
+              </div>
+            </div>
+            <div class='btn'>
+              <div class='next_btn'>
+                <i class="fa fa-arrow-right"></i>
+              </div>
+            </div>
+          </div>
+
+
+
       </div>
     </div>
 
   </div>
 </div>
+<script src='js/car_api.js'></script>
+  <script src='js/jquery.transit.min.js'></script>
   	<script src="js/classie.js"></script>
+    <script src="js/_main.js"></script>
   <script>
       (function() {
         // trim polyfill : https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/Trim

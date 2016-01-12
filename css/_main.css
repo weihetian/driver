@@ -18,7 +18,7 @@
 .application{
   position: absolute;
   left:50px;
-  bottom:-100px;
+  top:100px;
   font-family: "Avenir Next", "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-align: center;
   width: 450px;
@@ -27,6 +27,7 @@
   border-radius: 5px;
   overflow: hidden;
   padding-bottom:20px;
+
 }
 
 .application_header{
@@ -36,12 +37,28 @@
   font-weight: 400;
 }
 
+
+.application_body_form_arae{
+    min-height: 300px;
+}
 .application_body{
 
 }
 
-.progress_bar{
-  padding:50px 20px;
+.second_page{
+  display: none;
+  position: relative;
+  opacity: 0;
+  left: 10px;
+  padding:20px;
+}
+
+
+.third_page{
+  display: none;
+  position: relative;
+  opacity: 0;
+  left: 10px;
 }
 
 .application_btn_area{
@@ -50,20 +67,47 @@
 
 .next_btn{
   position: relative;
-  padding:8px;
-  width: 80px;
+  line-height: 50px;
+  width: 50px;
+  height: 50px;
   text-align: center;
   display: inline-block;
   color: white;
    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.25);
-   box-shadow: inset 0 -3px #16a085;
+   box-shadow: inset -1px -1px #16a085;
   background-color: #1abc9c;
   cursor: pointer;
+  border:3px solid #bdc3c7;
+  border-radius: 50%;
+}
+
+.left_btn{
+  position: relative;
+  line-height: 50px;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  display: inline-block;
+  color: white;
+   text-shadow: 0 1px 2px rgba(0, 0, 0, 0.25);
+   box-shadow: inset -1px -1px #16a085;
+  background-color: #1abc9c;
+  cursor: pointer;
+  border:3px solid #bdc3c7;
+    border-radius: 50%;
+}
+
+.btn{
+  width: 80px;
+  display: inline-block;
 }
 
 .next_btn:hover{
-  top:2px;
-  box-shadow: inset 0 -1px #16a085;
+  box-shadow: inset 1px 1px #16a085;
+}
+
+.left_btn:hover{
+  box-shadow: inset 1px 1px #16a085;
 }
 
 
@@ -75,6 +119,44 @@
   width: 180px;
 }
 
+.input_nomargin{
+  margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.application_group_label{
+  margin-top: 20px;
+  text-align: left;
+  padding:0px 25px;
+}
+
+.application_textarea{
+  width: 100%;
+  padding: 0px 25px;
+}
+
+.application_textarea p{
+  color: #8E9191;
+  font-size: 12px;
+  font-weight: 600;
+  text-align: left;
+  padding:0px 5px;
+}
+
+.application_textarea textarea{
+  width: 100%;
+  font-size: 15px;
+  color:#1abc9c;
+  border: 2px solid #8E9191;
+  border-radius: 5px;
+  height: 80px;
+}
+
+
+.application_textarea textarea:focus, textarea:active {
+
+  outline:0;
+}
 
 .main{
   margin-bottom: 100px;
