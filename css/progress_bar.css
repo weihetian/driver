@@ -3,14 +3,17 @@
   position: relative;
   height:120px;
   border-bottom: 1px solid #ecf0f1;
+  text-align: center;
 }
+
 
 ul.progress_bar_list{
   width: 100%;
+
   list-style-type: none;
   position: absolute;
-  text-align: left;
-
+  text-align: center;
+  padding: 0px;
   top:60px;
 }
 
@@ -19,6 +22,16 @@ ul.progress_bar_list li{
   text-align: center;
   font-size: 15px;
   width: 30%;
+}
+
+@media (max-width: 567px) {
+
+  ul.progress_bar_list li{
+    font-size: 12px;
+
+
+  }
+
 }
 
 /*.progress_bar_list li::before {
@@ -46,6 +59,14 @@ ul.progress_bar_list li:before {
   line-height: 45px;
   z-index: 2;
   }
+
+
+@media (max-width: 567px) {
+  ul.progress_bar_list li:before {
+    margin:10px 10px;
+  }
+
+}
 
 ul.progress_bar_list li{
   position: relative;
