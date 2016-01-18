@@ -1,0 +1,61 @@
+header {
+    background-color: rgba(0,0,0,0.8);
+    height: 50px;
+    color:white;
+    position: fixed;
+    top: 0;
+    transition: top 0.2s ease-in-out;
+    width: 100%;
+    z-index: 10;
+}
+
+.carvertise_logo_top
+{
+	margin:15px 20px;
+	font-size: 20px;
+}
+
+.tabs_top{
+	position:absolute;
+	top:0px;
+	right:0px;
+	padding:15px;
+}
+
+@media (max-width: 768px) {
+
+.tabs_top{display: none;}
+}
+
+
+.tabs_top_mobile
+{
+	display: none;
+	position:absolute;
+	top:0px;
+	right:0px;
+	padding:10px;
+
+}
+
+.tabs_top_mobile img{
+	width:30px;
+}
+
+@media (max-width: 768px) {
+
+.tabs_top_mobile
+{
+	display:inline;
+}
+}
+
+.single_tab
+{
+	color:white;
+	margin:0px 30px;
+	font-size: 20px;
+}
+.nav-up {
+    top: -50px;
+}
