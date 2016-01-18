@@ -295,8 +295,8 @@ body{
   padding-bottom: 100px;
   overflow: hidden;
   position: relative;
-  height: 600px;
-  background: url("http://cdn1.tnwcdn.com/wp-content/blogs.dir/1/files/2014/01/laptop-designer-table.jpg") no-repeat center center ;
+  height: 800px;
+  background: url("http://www.performance-car-guide.co.uk/wp-content/uploads/McLaren-Automotive-Chief-Test-Driver-Chris-Goodwin.jpg") no-repeat center center ;
    -webkit-background-size: cover;
    -moz-background-size: cover;
    -o-background-size: cover;
@@ -308,7 +308,7 @@ body{
 width: 100%;
 height: 600px;
 color:white;
-background: linear-gradient(to right, rgba(0,0,0,0) , rgba(0,0,0,1));
+background: linear-gradient(to right, rgba(0,0,0,0) , rgba(0,0,0,0.4));
 }
 
 #slide-4 .slide_header{
