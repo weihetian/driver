@@ -21,6 +21,12 @@ function hasScrolled() {
     if(Math.abs(lastScrollTop - st) <= delta)
         return;
 
+    if(st > 0){
+        $('header').addClass('nav-color');
+    }else if(st == 0){
+        $('header').removeClass('nav-color');
+    }
+
     // If they scrolled down and are past the navbar, add class .nav-up.
     // This is necessary so you never see what is "behind" the navbar.
     if (st > lastScrollTop && st > navbarHeight){

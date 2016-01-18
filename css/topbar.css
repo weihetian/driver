@@ -1,17 +1,17 @@
 header {
-    background-color: rgba(0,0,0,0.8);
+    background-color: rgba(0,0,0,0);
     height: 50px;
     color:white;
     position: fixed;
     top: 0;
-    transition: top 0.2s ease-in-out;
+    transition: all 0.5s ease;
     width: 100%;
     z-index: 10;
 }
 
 .carvertise_logo_top
 {
-	margin:15px 20px;
+	margin:15px 50px;
 	font-size: 20px;
 }
 
@@ -54,8 +54,12 @@ header {
 {
 	color:white;
 	margin:0px 30px;
-	font-size: 20px;
+	font-size: 15px;
 }
 .nav-up {
     top: -50px;
+}
+
+.nav-color{
+  background-color: rgba(0,0,0,1);
 }
