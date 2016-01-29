@@ -175,6 +175,15 @@ body{
 
 }
 
+.empty_input{
+  color: #e74c3c;
+  /*border:2px solid red;*/
+}
+
+.empty_input_border{
+  border-color: #e74c3c;
+}
+
 .second_page{
   display: none;
   position: relative;
@@ -313,7 +322,7 @@ body{
    -moz-background-size: cover;
    -o-background-size: cover;
    background-size: cover;
-  
+
 
 }
 
