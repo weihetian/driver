@@ -40,6 +40,25 @@ ul.social_list{
     overflow: hidden;
 }
 
+footer a:link{
+  color:white;
+}
+
+footer a:visited {
+    color: white;
+}
+
+/* mouse over link */
+/*a:hover {
+    color: white;
+}*/
+
+/* selected link */
+footer a:active {
+    color: white;
+}
+
+
 
 ul.social_list li{
   width: 40px;
@@ -51,6 +70,13 @@ ul.social_list li{
   float: left;
   border-radius: 50%;
   border: 2px white solid;
+
+   transition: all 0.5s ease;
+}
+
+ul.social_list li:hover{
+  border-color:#1abc9c;
+  color:#1abc9c;
 }
 
 .footer_tabs_list h3{
@@ -71,6 +97,15 @@ ul.footer_tabs_list li{
   margin: 0px;
   font-size: 15px;
   line-height: 30px;
+  position: relative;
+
+     transition: all 0.5s ease;
+  left:0px;
+}
+
+ul.footer_tabs_list li:hover{
+  left:10px;
+    color:#1abc9c;
 }
 
 
