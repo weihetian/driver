@@ -16,6 +16,7 @@
 
 
 
+
   <link href="//netdna.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
 
       <link rel="stylesheet" href='css/set2.css'>
@@ -28,39 +29,77 @@
 
       <link rel="stylesheet" href='css/topbar.css'>
 
+      <link rel="stylesheet" href='css/simple_nav.css'>
+
       <link rel="stylesheet" href='css/footer.css'>
 
       <link rel="stylesheet" href='css/_main.css'>
 
 
 </head>
-<body>
+<body  >
   <!-- Top bar  -->
-  <header class="nav-down">
+  <!-- <header class="nav-down" >
       <div class='carvertise_logo_top'>CARVERTISE
       </div>
       <div class='tabs_top'>
-      	<a class='single_tab' href="../driver">driver</a>
+
       	<a class='single_tab' href="../advertiser">advertiser</a>
         <a class='single_tab' href="../gallery">gallery</a>
         <a class='single_tab' href="../case_study">case study</a>
-      	<a class='single_tab' href="javascript:void(0)">press</a>
-      	<a class='single_tab' href="javascript:void(0)">FAQ</a>
+      	<a class='single_tab' href="../press">press</a>
+      	<a class='single_tab' href="../faq">FAQ</a>
       </div>
-      <div class='tabs_top_mobile'>
+      <div class='tabs_top_mobile' onclick='mobile_menu();'>
       	<img src='http://www.tax-consulting-group-san-diego.com/images/taxes-menu-icon.png'>
 
       </div>
   </header>
+
+<div class='mobile_nav_wrapper' onclick='mobile_menu_off();'>
+
+  <div class='mobile_nav'>
+    <div class='mobile_nav_header'>
+      <i class="fa fa-list-alt"></i> Menu
+    </div>
+    <ul class='nav_list'>
+      <a  href="../advertiser"><li>ADVERTISRE</li></a>
+      <a  href="../gallery"><li>GALLERY</li></a>
+      <a  href="../case_study"><li>CASE STUDY</li></a>
+      <a  href="../pree"><li>PRESS</li></a>
+      <a  href="../faq"><li>FAQ</li></a>
+    </ul>
+
+  </div>
+  </div> -->
+
+  <div class='simple_nav'>
+    <!-- <div class='sample_nav_header'>
+      CARVERTISE
+    </div> -->
+    <div class='simple_nav_logo'>
+      <img src='img/logo.gif'>
+    </div>
+    <div class='simple_nav_advertiser'>
+      <a href='../advertiser'><div class='advertiser_button'>Brands&Agencies</div></a>
+    </div>
+  </div>
+
+  <div class='confirm_screen'>
+    <div class='loading'>
+      <i class="fa fa-refresh fa-spin"> </i> Saving..
+    </div>
+  </div>
+
   <!-- Top bar end -->
 
-  <div class='main'>
+  <div class='main' >
   <div class='slide' id='slide-1'>
     <div class="header">
       <img src='img/landinglogo.png'>
       <p>needs great partners lke you, Drive with an ad on your car and get paid monthly for commuting around town like you normally do. <br>Drive Smarter. Live happier</p>
     </div>
-    <div class='application'>
+    <div class='application web-application'>
       <div class='application_header'>
         Become a driver
       </div>
@@ -74,7 +113,7 @@
       <div class='application_body'>
         <div class='application_body_form_arae'>
         <div class='fist_page'>
-          <span class="input input--nariko">
+          <span class="input input--nariko" >
             <input class="input__field input__field--nariko" name='input__field-1' type="text" id="input-firstname" />
             <label class="input__label input__label--nariko" for="input-firstname">
               <span class="input__label-content input__label-content--nariko"><i class="fa fa-user"></i> First Name</span>
@@ -209,7 +248,7 @@
           <div class='application_textarea'>
             <p>Anything else you can tell us about your driving habits
 (the more specific the information the better)</p>
-            <textarea></textarea></div>
+            <textarea id="input-comments"></textarea></div>
 
 
         </div>
@@ -235,12 +274,186 @@
 
   </div>
 
+  <div class='mobile-application-page'>
+    <div class='application mobile-application'>
+      <div class='application_header'>
+        Become a driver
+      </div>
+      <div class='progress_bar'>
+        <ul class='progress_bar_list'>
+          <li class='active step'>Driver Info</li>
+          <li class='step'>Vehicle Info</li>
+          <li class='end'>Driver Habits</li>
+        </ul>
+      </div>
+      <div class='application_body'>
+        <div class='application_body_form_arae'>
+        <div class='fist_page'>
+          <span class="input input--nariko" >
+            <input class="input__field input__field--nariko" name='input__field-1' type="text" id="input-firstname" />
+            <label class="input__label input__label--nariko" for="input-firstname">
+              <span class="input__label-content input__label-content--nariko"><i class="fa fa-user"></i> First Name</span>
+            </label>
+          </span>
+          <span class="input input--nariko">
+            <input class="input__field input__field--nariko" name='input__field-1' type="text" id="input-lastname" />
+            <label class="input__label input__label--nariko" for="input-lastname">
+              <span class="input__label-content input__label-content--nariko"><i class="fa fa-user"></i> Last Name</span>
+            </label>
+          </span>
+
+          <span class="input input--nariko">
+            <input class="input__field input__field--nariko" name='input__field-1' type="text" id="input-email" />
+            <label class="input__label input__label--nariko" for="input-email">
+              <span class="input__label-content input__label-content--nariko"><i class="fa fa-envelope-o"></i> Email</span>
+            </label>
+          </span>
+
+          <span class="input input--nariko">
+            <input class="input__field input__field--nariko" name='input__field-1' type="text" id="input-confirm_email" />
+            <label class="input__label input__label--nariko" for="input-confirm_email">
+              <span class="input__label-content input__label-content--nariko"><i class="fa fa-envelope-o"></i> Confirm Email</span>
+            </label>
+          </span>
+
+          <span class="input input--nariko">
+            <input class="input__field input__field--nariko" name='input__field-1' type="text" id="input-phone" />
+            <label class="input__label input__label--nariko" for="input-phone">
+              <span class="input__label-content input__label-content--nariko"><i class="fa fa-phone"></i> Phone</span>
+            </label>
+          </span>
+
+          <span class="input input--nariko">
+            <input class="input__field input__field--nariko" name='input__field-1' type="text" id="input-where" />
+            <label class="input__label input__label--nariko" for="input-where">
+              <span class="input__label-content input__label-content--nariko">How did you hear about us?</span>
+            </label>
+          </span>
+        </div>
+
+
+
+        <!-- second page -->
+        <div class='second_page'>
+
+
+          <div id="year-container" class="field-container">
+            <div class='normalLabel_wrapper'><label for="year" class="normalLabel">Year:</label></div>
+            <select name='input__field-2' id="year" class="year select_option"></select>
+          </div>
+          <div id="make-container" class="field-container">
+            <div class='normalLabel_wrapper'><label for="make"class="normalLabel">Make:</label></div>
+            <select name='input__field-2' id="make" class="make select_option"></select>
+          </div>
+          <div id="model-container" class="field-container">
+            <div class='normalLabel_wrapper'><label for="model" class="normalLabel">Model:</label></div>
+            <select name='input__field-2' id="model" class="model select_option"></select>
+          </div>
+          <div id="color-container" class="field-container-driverInfo field-container">
+            <div class='normalLabel_wrapper'><label for="color" class="normalLabel">Color:</label></div>
+            <select name='input__field-2' id="color" class="color select_option">
+              <option value="">---   </option>
+              <option>White</option>
+              <option>Black</option>
+              <option>Silver/Gray</option>
+              <option>Red</option>
+              <option>Blue</option>
+              <option>Brown/Beige</option>
+              <option>Green</option>
+              <option>Yellow/Gold</option>
+              <option>Other</option>
+            </select>
+          </div>
+          <div id="condition-container" class="field-container-driverInfo field-container">
+            <div class='normalLabel_wrapper'><label for="condition" class="normalLabel">Condition:</label></div>
+            <select name='input__field-2' id="condition" class="condition select_option">
+              <option value="">---   </option>
+              <option>Excellent</option>
+              <option>Good</option>
+              <option>Average</option>
+              <option>Rough</option>
+              <option>Damaged</option>
+            </select>
+          </div>
+        </div>
+
+
+        <!-- third page -->
+        <div class='third_page'>
+          <span class="input input--nariko input_nomargin">
+            <input class="input__field input__field--nariko" type="text" name='input__field-3' id="input-home_zip" />
+            <label class="input__label input__label--nariko" for="input-home_zip">
+              <span class="input__label-content input__label-content--nariko"><i class="fa fa-home"></i> Home Zip</span>
+            </label>
+          </span>
+          <span class="input input--nariko input_nomargin">
+            <input class="input__field input__field--nariko" type="text" name='input__field-3' id="input-home_city" />
+            <label class="input__label input__label--nariko" for="input-home_city">
+              <span class="input__label-content input__label-content--nariko"><i class="fa fa-home"></i> Home City</span>
+            </label>
+          </span>
+
+          <span class="input input--nariko input_nomargin">
+            <input class="input__field input__field--nariko" type="text" name='input__field-3' id="input-work_zip" />
+            <label class="input__label input__label--nariko" for="input-work_zip">
+              <span class="input__label-content input__label-content--nariko"><i class="fa fa-building-o"></i> Work Zip</span>
+            </label>
+          </span>
+          <span class="input input--nariko input_nomargin">
+            <input class="input__field input__field--nariko" type="text" name='input__field-3' id="input-work_city" />
+            <label class="input__label input__label--nariko" for="input-work_city">
+              <span class="input__label-content input__label-content--nariko"><i class="fa fa-building-o"></i> Work City</span>
+            </label>
+          </span>
+
+
+          <span class="input input--nariko">
+            <input class="input__field input__field--nariko" type="text" name='input__field-3' id="input-average_miles_day" />
+            <label class="input__label input__label--nariko" for="input-average_miles_day">
+              <span class="input__label-content input__label-content--nariko">Average miles driven each day? (must be numeric)</span>
+            </label>
+          </span>
+
+          <span class="input input--nariko">
+            <input class="input__field input__field--nariko" type="text" name='input__field-3' id="input-average_miles_weekend" />
+            <label class="input__label input__label--nariko" for="input-average_miles_weekend">
+              <span class="input__label-content input__label-content--nariko">Average miles driven every weekend? (must be numeric)</span>
+            </label>
+          </span>
+
+          <div class='application_textarea'>
+            <p>Anything else you can tell us about your driving habits
+    (the more specific the information the better)</p>
+            <textarea id="input-comments"></textarea></div>
+
+
+        </div>
+      </div>
+
+          <div class='application_btn_area'>
+            <div class='btn'>
+              <div class='left_btn'>
+                <i class="fa fa-arrow-left"></i>
+              </div>
+            </div>
+            <div class='btn'>
+              <div class='next_btn'>
+                <i class="fa fa-arrow-right"></i>
+              </div>
+            </div>
+          </div>
+
+
+
+      </div>
+    </div>
+  </div>
+
 
   <div class='slide' id='slide-2'>
     <div class='content'>
       <h1>What We Do</h1>
-      <p>We're an award winning advertising company that matches brands with safe, high-mileage car driving in the community. Since 2012, we've put hundreds of wrapped cars on the road
-        for our brand partners. Marketers use us to get their message seen in a certain geography. Drivers join us to make money for something they already do.
+      <p>We're an award winning advertising firm that matches brands with high-mileage car owners who want to drive with an ad decal on their car. Since 2012, we've put hundreds of wrapped cars on the road for our brand partners. Through this mutually beneficial relationship, brands use Carvertise to get their message seen in certain geographies, while drivers join us to make money for something they do already.
       </p>
     </div>
 
@@ -248,17 +461,14 @@
       <div class='imageSlide_wrapper'>
         <div class='imageSlide_image_area'>
           <div class='imageSlide_image_slide'>
-            <img src='http://image.automobilemag.com/f/42371024/angularfront.jpg'>
-            <img src='http://image.automobilemag.com/f/42371024/angularfront.jpg'>
-            <img src='http://image.automobilemag.com/f/42371024/angularfront.jpg'>
-            <img src='http://image.automobilemag.com/f/42371024/angularfront.jpg'>
+              <img src='img/Ad-ShopRite.png'>
+            <img src='img/Ad-WilmU.png'>
+
           </div>
         </div>
         <div class='imageSlide_control_area'>
           <ul class='imageSlide_control'>
             <li class='current_slide'> </li>
-            <li> </li>
-            <li> </li>
             <li> </li>
           </ul>
         </div>
@@ -267,7 +477,9 @@
   </div>
 
   <div class='slide' id='slide-3'>
-    <div class='full_slider'>
+
+    <!-- full slider gone -->
+    <!-- <div class='full_slider'>
 
       <div class='left_slider_control slider_control'>
         <i class="fa fa-chevron-left"></i>
@@ -282,8 +494,59 @@
         <h1>How Carvertise Works</h1>
         <p>Fill out our quick driver application. We need to understand where you normally drive.</p>
       </div>
-    </div>
+    </div> -->
+    <div class='header'>
+    <h1>HOW CARVERTISING WORKS</h1>
+    <p>OUR EASY PROCESS GOES LIKE THIS</p>
 
+      </div>
+    <div class='content'>
+      <div class='content_item'>
+        <div class='image'>
+          <img src='img/drive_app.png'>
+        </div>
+        <div class='item_header'>
+        <h3>DRIVER APPLICATION</h3>
+      </div>
+          <div class='item_p'>
+        <p>We ask some simple questions about where you normally drive</p>
+            </div>
+      </div>
+      <div class='content_item'>
+        <div class='image'>
+          <img src='img/match.png'>
+        </div>
+        <div class='item_header'>
+        <h3>MATCH</h3>
+      </div>
+          <div class='item_p'>
+        <p>We then match you to a brand that likes your driving habits</p>
+            </div>
+      </div>
+      <div class='content_item'>
+        <div class='image'>
+          <img src='img/drive.png'>
+        </div>
+        <div class='item_header'>
+        <h3>DRIVE & EARN</h3>
+      </div>
+          <div class='item_p'>
+        <p>We wrap your car & send you a check each month!</p>
+            </div>
+      </div>
+      <div class='content_item'>
+        <div class='image'>
+          <img src='img/unwrap.png'>
+        </div>
+        <div class='item_header'>
+          <h3>UNWRAP</h3>
+        </div>
+            <div class='item_p'>
+        <p>We take the add off at the end of the campaign</p>
+        </div>
+      </div>
+
+    </div>
   </div>
   <div class='slide' id='slide-4'>
     <div class='middle_layer'>
@@ -291,16 +554,32 @@
     <div class='slide_content'>
       <div class='slide_header'>
 
-      <h1>Earn $300-$650</h1>
-      <p>Dollars per campaign</p>
+      <h1>Earn<br><span class='dollar'>$300-$650</span></h1>
+      <p>per campaign</p>
     </div>
+
+    <div class='qualifications'>
       <h1>Qualifications</h1>
       <ul>
-        <li>21+ years old</li>
-        <li>2005 model car or newer</li>
-        <li>800+ miles/month</li>
+        <li>21+ years old <i class="fa fa-check-square-o"></i>
+</li>
+        <li>2005 model car or newer <i class="fa fa-check-square-o"></i>
+</li>
+        <li>800+ miles/month <i class="fa fa-check-square-o"></i>
+</li>
       </ul>
+
     </div>
+
+    <div class='call_to_action_wrapper'>
+      <div class='call_to_action' onclick="moveto('slide-1')">
+        DRIVER APPLICATION
+      </div>
+      <p>DRIVER SMATER<br>LIVE HAPPIER<p>
+
+    </div>
+
+  </div>
 
         </div>
   </div>
@@ -309,7 +588,7 @@
     <!-- <div class='footer_logo'>
         <img src='img/landinglogo.png'>
     </div> -->
-    <div class='social'>
+    <!-- <div class='social'>
       <ul class='social_list'>
         <a href="https://www.facebook.com/carvertise"><li><i class="fa fa-facebook"></i></li></a>
         <a href="https://www.facebook.com/carvertise"><li><i class="fa fa-twitter"></i></li></a>
@@ -318,24 +597,63 @@
         <a href="https://www.facebook.com/carvertise"><li><i class="fa fa-youtube"></i></li></a>
         <a href="https://www.facebook.com/carvertise"><li><i class="fa fa-yelp"></i></li></a>
       </ul>
-    </div>
-    <div class='footer_tabs'>
+    </div> -->
+    <div class='footer_tabs_area'>
 
-      <ul class='footer_tabs_list'><h3>Company</h3>
-        <a href="../about"><li>About Us</li></a>
-        <a href="../about"><li>Press</li></a>
-        <a href="../about"><li>FAQ</li></a>
-        <a href="../about"><li>Case Study</li></a>
+      <ul class='footer_tabs_list'><h3>Carvertiser</h3>
+        <!-- <a href="../about"><li>About Us</li></a> -->
+        <a href="../faq"><li>FAQ</li></a>
+        <a href="../press"><li>Press</li></a>
+        <a href='JavaScript:void(0)' onclick="moveto('slide-1')"><li>Join us</li></a>
+
+
+        <a href="../case_study"><li>Case Study</li></a>
+      </ul>
     </div>
 
-    <div class='contact'>
+    <div class='footer_tabs_area'>
+
+      <ul class='footer_tabs_list'><h3>Brands&Agencies</h3>
+        <!-- <a href="../about"><li>About Us</li></a> -->
+        <a href="../gallery"><li>Gallery</li></a>
+        <a href="../case_study"><li>Case study</li></a>
+        <a href="../press"><li>Press</li></a>
+        <a href="../press"><li>FAQ</li></a>
+      </ul>
+    </div>
+
+    <div class='footer_tabs_area'>
       <ul class='contact_list'><h3>Contact</h3>
         <li><i class="fa fa-phone"></i> 302.296.8410</li>
-        <li><i class="fa fa-envelope-o"></i> Star@carvertise.com</li>
+        <br>
+        <li><i class="fa fa-envelope-o"></i> Driver: Star@carvertise.com<br>
+        <i class="fa fa-envelope-o"></i> Brands: Star@carvertise.com
+        </li>
+        <br>
         <li><i class="fa fa-building-o"></i> 1313 N. Market St Wilmington, DE 19801</li>
 
       <h3></h3>
 
+    </div>
+
+    <div class='footer_tabs_area'>
+      <ul class='footer_tabs_list_social'><h3>Follow Us</h3>
+        <li>
+          <a class='social_item' href="https://www.facebook.com/carvertise"><i class="fa fa-facebook"></i></a>
+          <a class='social_item' href="https://www.facebook.com/carvertise"><i class="fa fa-linkedin"></i></a>
+        </li>
+        <li>
+          <a class='social_item' href="https://www.facebook.com/carvertise"><i class="fa fa-youtube"></i></a>
+          <a class='social_item' href="https://www.facebook.com/carvertise"><i class="fa fa-twitter"></i></a>
+        </li>
+        <li>
+          <a class='social_item' href="https://www.facebook.com/carvertise"><i class="fa fa-instagram"></i></a>
+          <a class='social_item' href="https://www.facebook.com/carvertise"><i class="fa fa-yelp"></i></a>
+        </li>
+        <!-- <a href="../case_study"><li>Case study</li></a>
+        <a href="../press"><li>Press</li></a>
+        <a href="../press"><li>FAQ</li></a> -->
+      </ul>
     </div>
 
 
@@ -344,9 +662,9 @@
       © Carvertise Inc.2016
     </div>
 
-    <div class='bottom_carline'>
+    <!-- <div class='bottom_carline'>
       <img src='img/carline.gif'>
-    </div>
+    </div> -->
 
   </footer>
 
@@ -358,7 +676,9 @@
     <script src='js/full_slider.js'></script>
   	<script src="js/classie.js"></script>
 
-    <script src='js/topbar.js'></script>
+    <!-- <script src='js/topbar.js'></script> -->
+
+  <script src='js/simple_nav.js'></script>
 
     <script src="js/_main.js"></script>
   <script>

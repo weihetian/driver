@@ -5,12 +5,12 @@ footer{
   display: inline-block;
   width: 100%;
   margin-top: 0px;
+  padding-bottom: 130px;
   background-color: #004059;
   background-image: -webkit-repeating-radial-gradient(center center, rgba(97,153,174,0.2), rgba(97,153,174,0.2) 1px, transparent 1px, transparent 100%);
   background-size:4px 4px;
   color: white;
-
-  height: 380px;
+min-height: 300px;
 }
 
 footer .footer_logo{
@@ -31,6 +31,11 @@ footer .footer_logo img{
   overflow: hidden;
   padding: 0px;
 }
+
+
+
+
+
 
 ul.social_list{
   margin: 0px;
@@ -60,12 +65,12 @@ footer a:active {
 
 
 
-ul.social_list li{
+.social_item{
   width: 40px;
   font-size: 25px;
   line-height: 40px;
   text-align: center;
-    margin: 0px 8px;
+    margin: 10px 10px;
   height: 40px;
   float: left;
   border-radius: 50%;
@@ -74,10 +79,36 @@ ul.social_list li{
    transition: all 0.5s ease;
 }
 
-ul.social_list li:hover{
+.social_item:hover{
   border-color:#1abc9c;
   color:#1abc9c;
 }
+
+.footer_tabs_list_social h3{
+  padding: 0px;
+  margin: 0px;
+  margin-bottom: 20px;
+}
+
+ul.footer_tabs_list_social{
+  padding: 0px;
+  margin: 0px;
+  list-style-type: none;
+}
+
+ul.footer_tabs_list_social li{
+  margin-bottom: 20px;
+
+  position: relative;
+
+
+}
+
+
+
+
+/*social done*/
+
 
 .footer_tabs_list h3{
   padding: 0px;
@@ -110,19 +141,17 @@ ul.footer_tabs_list li:hover{
 
 
 
-.footer_tabs{
-  width: 200px;
+.footer_tabs_area{
+  width: 15%;
   margin: 0px 50px;
+  overflow: hidden;
   float: left;
   position: relative;
   display: inline-block;
   padding: 0px;
 }
 
-.contact{
-  width: 300px;
-  float: left;
-}
+
 
 .contact_list h3{
   padding: 0px;
@@ -152,7 +181,7 @@ ul.contact_list i{
 .rights{
   position: absolute;
   left: 0px;
-  bottom: 110px;
+  bottom: 20px;
   width: 100%;
   text-align: center;
   font-size: 12px;
@@ -168,4 +197,51 @@ ul.contact_list i{
 
 .bottom_carline img{
   width: 100%;
+}
+
+
+@media (max-width: 768px) {
+
+  footer{
+    padding: 50px 20px;
+    width: 100%;
+    position: relative;
+  }
+
+/*.social{
+  position: relative;
+
+  width: 100%;
+  margin: 0px;
+  right:0px;
+  top:0px;
+  text-align: center;
+
+
+
+}
+
+.social_list{
+    padding: 20px 20px ;
+  overflow: hidden;
+    position: relative;
+    top:0px;
+}*/
+
+
+.footer_tabs_area{
+  width: 50%;
+  margin: 50px 0px;
+}
+
+.footer_tabs_area h3{
+  font-size: 15px;
+}
+
+.footer_tabs_area{
+  font-size: 13px;
+}
+
+
+
 }

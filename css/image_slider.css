@@ -1,6 +1,6 @@
 .imageSlide_image_area{
   width: 100%;
-  height: 400px;
+  min-height: 100px;
   overflow: hidden;
 }
 
@@ -21,6 +21,7 @@ ul.imageSlide_control{
 
     list-style-type: none;
     text-align: center;
+    padding: 0px;
 }
 
 ul.imageSlide_control li{

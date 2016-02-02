@@ -1,0 +1,89 @@
+.simple_nav{
+    background-color: rgba(0,0,0,0);
+    height: 65px;
+    color:white;
+    position: fixed;
+    top: 0;
+    transition: all 0.5s ease;
+    width: 100%;
+    z-index: 10;
+    text-align: center;
+}
+
+.simple_nav a:link{
+  color:white;
+}
+
+.simple_nav a:visited {
+    color: white;
+}
+
+.simple_nav a:active {
+    color: white;
+}
+
+
+/*.simple_nav .sample_nav_header{
+  line-height: 60px;
+  display: inline-block;
+  font-size: 25px;
+  letter-spacing: 5px;
+  font-weight: lighter;
+}*/
+
+.simple_nav  .simple_nav_logo{
+  width: 100px;
+  float: left;
+margin:13px 50px;
+}
+
+.simple_nav  .simple_nav_logo img{
+  width: 100%;
+}
+
+.simple_nav .simple_nav_advertiser{
+
+  float: right;
+  font-size: 13px;
+  margin:16px 50px;
+  letter-spacing: 1px;
+  font-weight: bold;
+}
+
+
+
+.simple_nav .simple_nav_advertiser .advertiser_button{
+  border: 2px solid white;
+  border-radius: 2px;
+  padding:8px 20px;
+  cursor: pointer;
+}
+
+
+.simple_nav .simple_nav_advertiser .advertiser_button:hover{
+  background-color: rgba(255,255,255,0.5);
+}
+
+.nav-color{
+  background-color: rgba(0, 64, 90, 0.7);
+}
+.nav-up {
+    top: -65px;
+}
+
+
+@media (max-width: 768px) {
+  .simple_nav  .simple_nav_logo{
+  display: none;
+  }
+
+  .simple_nav {
+    text-align: center;
+  }
+
+  .simple_nav .simple_nav_advertiser{
+    float: none;
+    display: inline-block;
+    margin:16px 0px;
+  }
+}
